@@ -1,0 +1,111 @@
+/**
+ * Content Style Sheet
+ * 
+ *
+ * Copyright (c) 2014. by Way2cu
+ * Author: Eyal Gershon
+ */
+
+div#content {
+	background-image: url(../images/header.jpg);
+	background-size: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+
+ }
+
+div.inner_wrap {
+ 	display: block;
+ 	max-width: 1200px;
+ 	height: 1050px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	position: relative;
+ }
+
+div.top_container {
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	width: 800px;
+}
+
+h1 {
+	color: #1d4779;
+	font-size: 3.3rem;
+	margin: 0;
+}
+
+h3 {
+	color: #287fb8;
+	font-size: 2rem;
+	font-family: alef-bold;
+}
+
+p {
+	color: #287fb8;
+	font-size: 1.8rem;
+	width: 600px;
+}
+
+div.donate {
+	position: absolute;
+	bottom: 450px;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+	text-align: center;
+}
+
+div.donate span {
+	display: block;
+}
+
+div.donate span:nth-of-type(1) {
+	font-size: 2.2rem;
+	color: #e57d21;
+	font-family: alef-bold;
+}
+
+div.donate span:nth-of-type(2) {
+	font-size: 1.7rem;
+	color: #663428;
+}
+
+div.donate a {
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-decoration: none;
+	background-color: #e57d21;
+	font-size: 2.2rem;
+	width: 150px;
+	border-radius: 5px;
+}
+
+div.bracha {
+	position: absolute;
+	left: 85px;
+	top: 250px;
+	width: 235px;
+	height: 400px;
+	color: #663428;
+	text-align: center;
+	background-image: url(../images/logo-brown.svg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+
+div.bracha span {
+	display: block;
+	font-size: 2.6rem;
+}
+
+div.bracha span:nth-of-type(1) {
+	font-family: alef-bold;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}

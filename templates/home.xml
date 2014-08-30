@@ -9,7 +9,49 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<div id="content">
+				<div class="inner_wrap">
+					<div class="top_container">
+						<h1>
+							<cms:text constant="title"/>
+						</h1>
+						<h3>
+							<cms:text constant="sub_title"/>
+						</h3>
+						<p>
+							<cms:text constant="paragraph"/>
+						</p>
+					</div>
+					<div class="donate">
+						<span>
+							<cms:text constant="together"/>
+						</span>
+						<span>
+							<cms:text constant="donate_now"/>
+						</span>
+						<a
+							 href="'" 
+							 class="donate_now"
+						>
+						<cms:text constant="donate_button"/>
+						</a>
+					</div>
+					<div class="bracha">
+						<span>
+							<cms:text constant="bracha_title"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_1"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_2"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_3"/>
+						</span>
+					</div>
+				</div>
+			</div>
 		</body>
 	</html>
 </document>
