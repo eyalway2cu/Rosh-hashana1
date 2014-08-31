@@ -6,18 +6,21 @@
  * Author: Eyal Gershon
  */
 
+html, body {
+	height: 100%;
+}
+
 div#content {
+	height: 100%;
 	background-image: url(../images/header.jpg);
-	background-size: 100%;
 	background-position: center top;
 	background-repeat: no-repeat;
-
  }
 
 div.inner_wrap {
  	display: block;
  	max-width: 1200px;
- 	height: 1050px;
+ 	min-height: 700px;
  	margin-left: auto;
  	margin-right: auto;
  	position: relative;
@@ -50,7 +53,7 @@ p {
 
 div.donate {
 	position: absolute;
-	bottom: 450px;
+	top: 450px;
 	width: 400px;
 	left: 50%;
 	margin-left: -200px;
@@ -87,8 +90,8 @@ div.donate a {
 
 div.bracha {
 	position: absolute;
-	left: 85px;
-	top: 250px;
+	left: 35px;
+	top: 300px;
 	width: 235px;
 	height: 400px;
 	color: #663428;
