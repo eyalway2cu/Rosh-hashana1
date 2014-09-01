@@ -6,6 +6,9 @@
  * Authors:
  */
 
+var Caracal = Caracal || {};
+
+
 /**
  * Show tranzila dialog.
  */
@@ -14,7 +17,6 @@ function showTranzilla(event) {
 
 	var form = $(this);
 	var data = {};
-	var iframe = $('<iframe>');
 	var url = 'https://direct.tranzila.com/<account>/iframe.php?';
 
 	// prepare params for tranzilla
@@ -25,19 +27,32 @@ function showTranzilla(event) {
 		currency: 1
 	};
 
-	// configure iframe
-	iframe
-		.attr('id', 'tranzila')
-		.attr('frameborder', 0)
-		.attr('src', url + $.param(params))
-		.appendTo($('body'));
+	// create iframe if needed
+	if (Caracal.iframe === undefined) {
+		Caracal.iframe = $('<iframe>');
+
+		Caracal.iframe
+			.attr('id', 'tranzila')
+			.attr('frameborder', 0)
+			.attr('src', url + $.param(params))
+			.appendTo($('body'));
+
+		Caracal.background = $('<div>');
+		Caracal.background
+			.addClass('iframe-background')
+			.click(function(event) {
+				event.preventDefault();
+				Caracal.background.removeClass('visible');
+				Caracal.iframe.removeClass('visible');
+			})
+			.appendTo($('body'));
+	}
 
 	// show iframe
-	iframe.addClass('visible');
-
-	if (error)
-		var response = true; else
-		var response = false;
+	setTimeout(function() {
+		Caracal.background.addClass('visible');
+		Caracal.iframe.addClass('visible');
+	}, 50);
 
 	return response;
 }
