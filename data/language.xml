@@ -13,5 +13,7 @@
 		<constant name="bracha_1">תרגיש טוב</constant>
 		<constant name="bracha_2">תחשוב טוב</constant>
 		<constant name="bracha_3">תעשה טוב</constant>
+		<constant name="header1-thankyou">אנו מודים לכם על תרומתכם</constant>
+		<constant name="header2-thankyou">כותרת משנה לדף תודה</constant>
 	</language>
 </document>

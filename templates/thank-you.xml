@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<div id="content">
+				<div class="inner_wrap">
+					<div class="top_container">
+						<h1>
+							<cms:text constant="header1-thankyou"/>
+						</h1>
+						<h3>
+							<cms:text constant="header2-thankyou"/>
+						</h3>
+					</div>
+					<div class="bracha">
+						<span>
+							<cms:text constant="bracha_title"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_1"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_2"/>
+						</span>
+						<span>
+							<cms:text constant="bracha_3"/>
+						</span>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
+</document>
